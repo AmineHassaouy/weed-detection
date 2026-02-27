@@ -1,2 +1,8 @@
 venv/
 data/
+.claude/
+best_model.h5
+CLAUDE.md
+README.md
+best_model_finetuned.h5
+weed_detection_model.h5
