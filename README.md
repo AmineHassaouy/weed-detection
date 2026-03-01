@@ -80,11 +80,26 @@ After training, the following files are saved to `/kaggle/working/`:
 | `04_per_class_metrics.png` | Precision / Recall / F1 per class |
 | `05_prediction_examples.png` | 12 sample predictions (correct in green, errors in red) |
 
+## Inference
+
+Use `predict.ipynb` to run a single-image prediction with a trained model:
+
+1. Place your trained model (`weed_detection_model.h5`) in the working directory
+2. Set the image path in the notebook
+3. Run the cell — it prints the predicted class and confidence percentage
+
+```python
+# Example output
+Plante detectee : Black-grass
+Confiance : 97.3%
+```
+
 ## Project Structure
 
 ```
 .
 ├── weed-detection.ipynb    # Full pipeline — data loading to evaluation
+├── predict.ipynb           # Single-image inference with a trained model
 ├── requirements.txt        # Pinned dependencies
 └── data/
     └── v2-plant-seedlings-dataset/
